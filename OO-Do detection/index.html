@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>OO-Do detection</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https://jonbarron.info/mipnerf360/img/gardenvase.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1296">
+    <meta property="og:image:height" content="840">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jonbarron.info/mipnerf360/"/>
+    <meta property="og:title" content="Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields" />
+    <meta property="og:description" content="Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on 'unbounded' scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub 'mip-NeRF 360' as we target scenes in which the camera rotates 360 degrees around a point, reduces mean-squared error by 54% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields" />
+    <meta name="twitter:description" content="Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on 'unbounded' scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub 'mip-NeRF 360' as we target scenes in which the camera rotates 360 degrees around a point, reduces mean-squared error by 54% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes." />
+    <meta name="twitter:image" content="https://jonbarron.info/mipnerf360/img/gardenvase.jpg" />
+
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>Attacking the Out-of-Domain Problem of a Parasite Egg Detection In-The-Wild
+                </br> 
+                <small>
+                </small>
+            </h2>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        
+                          Nutsuda Penpong
+                        
+                        </br>Department of Applied Statistics </br> Faculty of Science </br> Khon Kaen University
+
+                    </li>
+                    <li>
+                        
+                        Yupaporn Wanna
+                      
+                      </br>Department of Applied Statistics </br> Faculty of Science </br> Khon Kaen University
+
+                    </li>
+                    <br>
+                    <br>
+                    <br>
+                    <li>
+                            
+                        Cristakan Kamjanlard
+                    
+                    </br>Cholangiocarcinoma Research Institute </br> Khon Kaen University
+
+                    </li>
+                    <li>
+                        <a href="https://scholar.harvard.edu/dorverbin/home">
+                            Thanapong Intharah
+                        </a>
+                        </br>Department of Statistics </br> Faculty of Science </br> Khon Kaen University
+                    </li>
+                    <li>
+                        
+                            Anchalee Techasen
+                        
+                        </br>Department of Clinical Microbiology </br> Faculty of Associated Medical Sciences </br> Khon Kaen University
+                    </li>
+                    <br>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+        </div>
+        
+        </br>
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="img/paper.pdf">
+                            <image src="img/paper.PNG" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/Fairchrona/OO-Do-detection.git">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1Y5OS86qPa-ZNV6d2eaQsBH7BWboO7RN0?usp=drive_link">
+                            <image src="img/drive_icon.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <br>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/webpagevdo.mp4" type="video/mp4" />
+                </video>
+						</div>
+            <div class="col-md-8 col-md-offset-2">
+							<p class="text-center">
+							Parasite egg detection webpage 
+							</p>
+						</div>
+        </div>
+        
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Out-of-domain problem (OO-Do) has been hindered machine learning models especially when the models are deployed in real-world situation.
+                    The OO-Do happens at the test time when a learned machine learning model have to make a prediction for an input data belongs to a class that has not been seen at the training time. In this work, we tackle the OO-Do in object detection task specifically a parasite egg detection model being used in real-world situation. 
+                    First, we introduced an in-the-wild parasite egg dataset to evaluate the OO-Do-aware model. 
+                    The in-the-wild parasite egg dataset was constructed by conducting a chatbot test session with 222 Medical Technology students, which contains 1,552 images uploaded through the chatbot, including 1,049 parasite egg images and 503 non-parasite egg (OO-Do) images. 
+                    Moreover, we propose a data-driven framework for constructing a parasite egg recognition model for in-the-wild applications to address the issue. 
+                    The framework describes how we use publicly available datasets to train the parasite egg recognition model about in domain and out-of-domain knowledge. 
+                    Finally, we compare integration strategies for our proposed two-step parasite egg detection approaches on two test sets: standard and in-the-wild datasets. We also investigate different thresholding strategies for robustness to OO-Do data. 
+                    In the experiments, we found that concatenating a classification model that is fine-tuned to be aware of OO-Do after the object detection model and using Softmax and G-mean achieved outstanding performance for detecting parasite eggs in the two test sets. 
+                    The framework gained 7.37% and 4.09% F1-score improvement from the baselines on Chula<sub>test</sub>+Wild<sub>OO−Do</sub> dataset and in-the-wild parasite egg dataset, respectively
+                </p>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                
+                <h3>
+                    The definition of OO-Do
+                </h3>
+                <br>
+                <p class="text-center">
+                    <image src="img/Difference_of_OOD.png" width="80%">
+                </p>
+			</div>
+            
+            <div class="col-md-8 col-md-offset-2">
+                <br>
+				<p class="text-justify">
+                    Differences between out-of-domain test data and out-of-distribution test data where the training data consists of four classes: English springer, car, parachute, and church.
+                    The out-of-domain problem (OO-Do) occurs when a test image comes from a class outside the training data. It differs from the well-known out-of-distribution problem.
+                    In this work, we clearly define that the OO-Do problem occurs when the test images come from a class outside the training set, while the out-of-5 distribution problem occurs when the test images are of one of the trained classes but come from different distributions from the training data
+				</p>
+			</div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                
+                <h3>
+                    Proposed Data Driven Frameworks
+                </h3>
+                    <br>
+                    <p class="text-justify">
+                        We propose and evaluate two data-driven frameworks. 
+                        The frameworks comprise of the data-driven model construction process and recognition model architecture. 
+                        The distinction between the two frameworks is the order of the recognition models: OO-Do image classification model and object detection model.
+                        This section describes our proposed data-driven steps for both frameworks.
+                    </p>
+                <br>
+                <h4>
+                    1. Classification-first
+                </h4>
+                <br>
+                    <p class="text-justify">
+                        For the classification-first framework, we use the OO-Do-aware classification model to screen the input images before passing the images to the object detection model
+                    </p>
+                <br>
+                <p class="text-center">
+                    <image src="img/Class_detect_train.png" width="80%">
+                </p>
+                <br>
+                <h4>
+                    2. Classification-later
+                </h4>
+                <br>
+                    <p class="text-justify">
+                        In contrast to the first framework, the classification-later framework places the OO-Do-aware classification model behind the object detection model
+                    </p>
+                <br>
+                <p class="text-center">
+                    <image src="img/Detect_class_train.png" width="80%">
+                </p>
+			</div>
+        </div>
+            
+        <br>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                
+                <h3>
+                    Experiments and Results
+                </h3>
+                <br>
+                <p class="text-justify">
+                        Comparison of different approaches on Chula<sub>test</sub>+Wild<sub>OO−Do</sub> dataset for out-of-domain experiments. 
+                        All values are percentages. 
+                        Bold numbers are superior results. 
+                        (numbers in the table are represented as top, 2nd-top, 3rd-top, and regular)
+                </p>
+                <br>
+                <p class="text-center">
+                    <image src="img/results.PNG" width="80%">
+                </p>
+
+                <br>
+                <p class="text-justify">
+                        Comparison of different approaches on in-the-wild dataset for out-of-domain experiments. 
+                        All values are percentages. 
+                        Bold numbers are superior results. 
+                        (numbers in the table are represented as top, 2nd-top, 3rd-top, and regular)
+                </p>
+                <br>
+                <p class="text-center">
+                    <image src="img/result_2.PNG" width="80%">
+                </p>
+
+
+			</div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                Thank you to Anchalee Techasen and Thanapong Intharah for supporting and advising me to complete the research.
+                    <br>
+                The website template was borrowed from <a href="https://jonbarron.info/">Jon Barron</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
